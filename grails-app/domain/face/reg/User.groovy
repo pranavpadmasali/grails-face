@@ -1,6 +1,7 @@
 package face.reg
 import grails.rest.*
 import grails.rest.render.json.*
+import face.reg.Password
 
 @Resource(uri='/users')
 class User {
@@ -8,11 +9,3 @@ class User {
     Password password
 }
 
-class Password {
-    String type
-    String data
-    String faceData
-    static constraints = {
-        faceData type: 'text'
-    }
-}
