@@ -31,3 +31,9 @@
 
 # "temporary" build files
 /target
+.gradle/
+.DS_Store
+/build
+/*/build/*
+
+
